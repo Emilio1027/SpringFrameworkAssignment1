@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context" xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"> <!-- bean definitions here -->
+
+
+    <bean id = "Address" class = "org.Assignment1.Address">
+        <property name = "city" value = "Miami"/>
+        <property name = "state" value = "Florida"/>
+        <property name = "country" value = "USA"/>
+        <property name = "zipcode" value = "33030"/>
+    </bean>
+
+    <bean id = "Student" class = "org.Assignment1.Student">
+        <property name = "id" value ="00023130"  />
+        <property name = "name" value ="Emilio"  />
+        <property name = "add" ref = "Address"/>
+        <property name = "ph" ref ="Phone"/>
+    </bean>
+
+    <bean id = "Phone" class = "org.Assignment1.Phone">
+        <property name = "mob" value = "12345678"/>
+    </bean>
+</beans>
+
+
+
