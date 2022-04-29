@@ -10,8 +10,6 @@ public class Student {
     private List<Phone> ph;
     private Address add;
 
-//    public Student(int i, String emilio, List<Phone> phone, Address add) {
-//    }
 
 
     public int getId() {

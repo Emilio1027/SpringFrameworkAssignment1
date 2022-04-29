@@ -7,7 +7,7 @@ public class Phone {
     public Phone() {
     }
 
-    public Phone(String s) {
+    public Phone(String mob) {
     }
 
 
